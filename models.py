@@ -1,13 +1,19 @@
 from datetime import date
 
-
-class User:
-    # Represents a system user
-    def __init__(self, username,email, password):
-        self.username =username
-        self.email=email
+#attributes based the UML 
+class RegisteredUser:
+  def __init__(self, username, email, password, gender, country, age_group):
+        self.username = username
+        self.email = email
         self.password = password
-        self.reviews = []  # Reviews created by this user
+        self.gender = gender
+        self.country = country
+        self.age_group = age_group
+        self.reviews = []   
+
+  def __str__(self): 
+        return f"Hello: {self.username}"
+
 
 
 class Store:

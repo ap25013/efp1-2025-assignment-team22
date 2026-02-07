@@ -1,6 +1,5 @@
 from datetime import date
 
-
 class User:
     # Represents a system user
     def __init__(self, username, password, gender, country, age_group):
@@ -11,14 +10,12 @@ class User:
         self.age_group = age_group
         self.reviews = []  # List of Review objects
 
-
 class Store:
     # Represents an online store
     def __init__(self, name, website, price):
         self.name = name
         self.website = website
         self.price = price
-
 
 class Review:
     # Represents a product review
@@ -28,7 +25,6 @@ class Review:
         self.rating = rating
         self.comment = comment
         self.date = date.today()
-
 
 class Product:
     # Represents a product
@@ -50,7 +46,6 @@ class Product:
         if len(self.stores) == 0:
             return 0
         return min(s.price for s in self.stores)
-
 
 class Comparison:
     # Represents comparison between up to 3 products

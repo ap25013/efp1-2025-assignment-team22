@@ -54,4 +54,12 @@ Use case “Αξιολόγηση Προϊόντος”:
 
 python main.py
 
+5. Δομή Έργου
+project_folder/
+│
+├── main.py        # Κεντρικό πρόγραμμα και μενού
+├── services.py    # Λογική του συστήματος και use cases
+├── models.py      # Κλάσεις (User, Product, Review, Store)
+└── README.md
+
 

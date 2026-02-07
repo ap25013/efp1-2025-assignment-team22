@@ -39,22 +39,10 @@
 2. Ανοίξτε τερματικό (terminal) στον φάκελο του προγράμματος.
 3. Εκτελέστε το πρόγραμμα με την εντολή:
 
-```bash
-##5. Από use case → ροή κώδικα
-Use case “Αξιολόγηση Προϊόντος”:
+---
 
-Χρήστης εισάγει κριτήριο αναζήτησης →  product_name
-Σύστημα εμφανίζει διαθέσιμα προϊόντα → product_list()
-Χρήστης επιλέγει product_id
-Χρήστης επιλέγει review
-Σύστημα ελέγχει αν ο χρήστης είναι reigistered 
-Σύστημα φέρνει φόρμα αξιολόγησης→  -reviewId date - reviw_ratings -review_comments ,revie_id
-Δημιουργεί Review
-Σύστημα εμφανίζει επιβεβαίωση 
+## 5. Δομή Έργου
 
-python main.py
-
-5. Δομή Έργου
 project_folder/
 │
 ├── main.py        # Κεντρικό πρόγραμμα και μενού
@@ -62,4 +50,46 @@ project_folder/
 ├── models.py      # Κλάσεις (User, Product, Review, Store)
 └── README.md
 
+## 6. Βασικές Λειτουργίες
 
+- Εγγραφή χρήστη (Register)
+- Σύνδεση χρήστη (Login)
+- Αναζήτηση προϊόντων με βάση όνομα ή κατηγορία
+- Προβολή στοιχείων προϊόντος και καταστημάτων
+- Προβολή αξιολογήσεων προϊόντος
+- Καταχώρηση αξιολόγησης (βαθμολογία και σχόλιο)
+- Περιορισμός: μία αξιολόγηση ανά χρήστη για κάθε προϊόν
+
+## 7. Παράδειγμα Εκτέλεσης
+1. Register
+2. Login
+3. Search product
+0. Exit
+
+Επιλογή: 3
+Enter product name or category: Headphones
+
+0. Sony WH-1000XM5
+1. JBL Tune 760NC
+
+Select product: 1
+
+Product name: JBL Tune 760NC
+Category: Headphones
+Description: Wireless noise cancelling headphones
+
+Stores:
+AudioShop | www.audioshop.com | 120€
+SoundStore | www.soundstore.com | 110€
+
+Show reviews? (y/n): n
+Rate this product? (y/n): y
+
+Username: anna
+Password: 5678
+Rating (1-5): 4
+Comment: Good sound quality and comfortable.
+
+Review saved successfully!
+
+0. Exit

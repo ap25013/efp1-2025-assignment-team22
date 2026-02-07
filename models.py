@@ -1,6 +1,5 @@
 from datetime import date
 
-
 class User:
     # Represents a system user
     def __init__(self, username, password):

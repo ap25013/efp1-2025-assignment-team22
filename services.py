@@ -10,8 +10,11 @@ def register_user():
     # Register a new user
     username = input("Username: ")
     password = input("Password: ")
+    gender =input ("Gender:")
+    country = input("Country:")
+    age_group =input("Age_group:")
 
-    user = User(username, password)
+    user = User(username, password,gender ,country ,age_group)
     users.append(user)
 
     print("User registered successfully!")

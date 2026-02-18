@@ -1,1 +1,46 @@
 
+@startuml
+
+class User {
+  +userId: int
+  +username: string
+  +password: string
+  +gender: string
+  +ageGroup: string
+  --
+  +signIn()
+  +signUp()
+  +searchProduct()
+  +rateProduct()
+  +viewMyReviews()
+}
+
+class Product {
+  +productId: int
+  +fullName: string
+  +category: string
+  +description: string
+  --
+  +getAttribute()
+  +getReviewsCount()
+  +getMinPrice()
+}
+
+class Review {
+  +reviewId: int
+  +date: string
+  +rating: int
+  +comments: string
+}
+
+class Store {
+  +storeId: int
+  +name: string
+  +website: string
+  +productPrice: float
+}
+User "1" -- "0..*" Review
+Product "1" -- "0..*" Review
+Store "1..*" -- "1" Product
+
+@enduml     

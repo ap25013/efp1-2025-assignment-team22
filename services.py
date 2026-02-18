@@ -88,7 +88,7 @@ def rate_product(product):
     rating = int(input("Rating (1-5): "))
     comment = input("Comment: ")
 
-    review = Review(current_user, rating, comment)
+    review = Review(current_user, product, rating, comment)
 
     product.reviews.append(review)
     current_user.reviews.append(review)

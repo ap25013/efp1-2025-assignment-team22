@@ -1,1 +1,58 @@
+@startuml
+title Product Review System – Main Scenario (Happy Path)
 
+actor User
+participant "CLI / Web UI\n(main.py / frontend)" as UI
+participant "E-shop System" as System
+database "Database\n(users, products, reviews, stores)" as DB
+
+== Έναρξη εφαρμογής ==
+
+User -> UI : Εκκίνηση εφαρμογής\nΕισαγωγή username & password
+UI -> System : signIn(username, password)
+System -> Data : αναζήτηση χρήστη
+Data -->  : User ή None
+System --> UI : User object
+UI --> User : Επιτυχής σύνδεση
+
+== Αναζήτηση Προϊόντος ==
+
+User -> UI : Εισαγωγή κριτηρίων αναζήτησης
+UI -> System : searchProduct(criteria)
+System -> Data : αναζήτηση προϊόντων
+Data --> System : λίστα προϊόντων
+System --> UI : λίστα προϊόντων
+UI --> User : Εμφάνιση λίστας προϊόντων
+
+== Υποβολή Αξιολόγησης ==
+
+User -> UI : Επιλογή προϊόντος + Βαθμολογία + Σχόλιο
+UI -> System : rateProduct(user, productId, rating, comment)
+
+activate System
+System -> Data: έλεγχος ύπαρξης προϊόντος
+Data--> System : Product
+
+System -> System : δημιουργία Review
+System -> Data : αποθήκευση Review
+Data --> System : OK
+System --> UI : Review object
+deactivate System
+
+UI --> User : "Η αξιολόγηση καταχωρήθηκε επιτυχώς"
+
+== Προβολή Αξιολογήσεων Χρήστη ==
+
+User -> UI : Επιλογή "Οι αξιολογήσεις μου"
+UI -> System : viewMyReviews(user)
+System -> Data : αναζήτηση reviews ανά user
+Data --> System : λίστα reviews
+System --> UI : λίστα reviews
+UI --> User : Εμφάνιση αξιολογήσεων
+
+== Έξοδος ==
+
+User -> UI : Επιλογή "Έξοδος"
+UI --> User : "Αποσύνδεση επιτυχής"
+
+@enduml

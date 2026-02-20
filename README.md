@@ -65,31 +65,33 @@ project_folder/
 1. Register
 2. Login
 3. Search product
-0. Exit
+4. Exit
 
-Επιλογή: 3
-Enter product name or category: Headphones
+Choice: 3
+Enter product name or category: Electronics
 
-0. Sony WH-1000XM5
-1. JBL Tune 760NC
+Products found:
+1. iPhone 15
+2. Galaxy S24
+3. AirPods Pro
 
 Select product: 1
 
-Product name: JBL Tune 760NC
-Category: Headphones
-Description: Wireless noise cancelling headphones
+Product name: iPhone 15
+Category: Electronics
+Description: Apple smartphone
 
 Stores:
-AudioShop | www.audioshop.com | 120€
-SoundStore | www.soundstore.com | 110€
+Skroutz | skroutz.gr | 999€
+BestPrices | bestprices.gr | 979€
 
 Show reviews? (y/n): n
 Rate this product? (y/n): y
 
-Username: anna
-Password: 5678
-Rating (1-5): 4
-Comment: Good sound quality and comfortable.
+Username: maria
+Password: 4321
+Rating (1-5): 5
+Comment: Excellent phone!
 
 Review saved successfully!
 

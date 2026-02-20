@@ -39,11 +39,17 @@
 2. Ανοίξτε τερματικό (terminal) στον φάκελο του προγράμματος.
 3. Εκτελέστε το πρόγραμμα με την εντολή:
 
+python main.py
+
 ---
 
 ## 5. Δομή Έργου
 
-
+project_folder/
+│
+├─ models.py        # Ορισμός κλάσεων Product, Store, User
+├─ services.py      # Λειτουργίες: register, login, search, rate, show_reviews
+└─ main.py          # Κύριο πρόγραμμα και loop
 
 ## 6. Βασικές Λειτουργίες
 

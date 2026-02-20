@@ -24,7 +24,7 @@ def main():
     seed_products()  # add sample products
 
     while True:
-        print("\n--- Product Review App ---")
+        print("\nProduct Review App")
         print("1. Register")
         print("2. Login")
         print("3. Search product")

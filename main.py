@@ -7,8 +7,8 @@ from services import (
 # --- Seed sample products for testing ---
 def seed_products():
     p1 = Product("iPhone 15", "Electronics", "Apple smartphone")
-    p1.stores.append(Store("Amazon", "amazon.com", 999))
-    p1.stores.append(Store("BestBuy", "bestbuy.com", 979))
+    p1.stores.append(Store("Skroutz", "skroutz.gr", 999))
+    p1.stores.append(Store("BestPrices", "bestprices.gr", 979))
 
     p2 = Product("Galaxy S24", "Electronics", "Samsung smartphone")
     p2.stores.append(Store("Samsung Store", "samsung.com", 899))

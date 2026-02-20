@@ -43,6 +43,7 @@
 
 ## 5. Δομή Έργου
 
+```text
 project_folder/
 │
 ├─ models.py        # Ορισμός κλάσεων Product, Store, User

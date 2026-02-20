@@ -87,9 +87,9 @@ rate_product(product) – καταχώρηση νέας αξιολόγησης
 
 Στον φάκελο diagrams/ περιλαμβάνονται:
 
--class_diagram.png – class diagram των βασικών κλάσεων που υλοποιούνται.
--sequence_diagram.png – sequence diagram για το βασικό use case.
--class & sequence αρχεία - επεξήγηση των παραπάνω διαγραμμάτων.
+- class_diagram.png – class diagram των βασικών κλάσεων που υλοποιούνται.
+- sequence_diagram.png – sequence diagram για το βασικό use case.
+- class & sequence αρχεία - επεξήγηση των παραπάνω διαγραμμάτων.
 
 Όλα τα υπόλοιπα αρχεία .png, αποτελούν κομμάτι του πρώτου μέρους της εργασίας και απεικονίζουν ολόκληρο το σύστημα αναζήτησης, προβολής και αξιολόγησης προϊόντων. 
 

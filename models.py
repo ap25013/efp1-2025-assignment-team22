@@ -60,4 +60,3 @@ class Comparison:
             print("Average rating:", p.average_rating())
             print("Number of stores:", len(p.stores))
             print("Minimum price:", p.min_price())
-zxczc
